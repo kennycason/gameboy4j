@@ -73,7 +73,7 @@ public class Z80 {
 		totalCommandsExecuted++;
 		if(System.currentTimeMillis() - lastTimeMeasured > 1000) {
 			lastTimeMeasured = System.currentTimeMillis();
-			System.out.println((totalCommandsExecuted - lastNumberOfCommandsExecuted) + " Ops/sec");
+			System.out.println((totalCommandsExecuted - lastNumberOfCommandsExecuted) + " ops/sec");
 			lastNumberOfCommandsExecuted = totalCommandsExecuted;
 		}
 	}
